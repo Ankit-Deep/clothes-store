@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import { Header, Footer, HeroSection } from "./components";
 import { ThemeProvider } from "./components/context/theme";
@@ -38,6 +39,13 @@ function App() {
             <Footer />
         </div>
       </ThemeProvider>
+=======
+import CustomPage from "./components/container/Custompage";
+function App() {
+  return (
+    <>
+   <CustomPage/>
+>>>>>>> origin/NewBranch
     </>
   );
 }
