@@ -8,7 +8,7 @@ function Button({
 }) {
   return (
     <button
-      className={`text-base sm:px-5 px-6 py-2  ${type} ${className} `}
+      className={`sm:text-base  px-5 sm:py-2 py-1  ${type} ${className} ${props} `}
     >
       {name}
     </button>

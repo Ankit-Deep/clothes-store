@@ -6,7 +6,7 @@ function Home() {
     <>
       <div className="">
         <Container>
-          <div className="min-w-full h-screen">
+          <div className="min-w-full flex flex-col gap-5">
             <HeroSection />
 
             <Explore/>
