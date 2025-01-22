@@ -7,7 +7,11 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 // import { Provider } from 'react-redux'
 import Explore from "./components/Explore.jsx";
 import Home from "./pages/Home.jsx";
-import Customize from "./pages/Customize.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import Contact from "./pages/Contact.jsx";
+import conf from "../src/conf/conf.js";
+import Customize from "./pages/Customize.jsx"
+import Cart from "./pages/Cart.jsx"
 
 const router = createBrowserRouter([
   {
@@ -22,21 +26,24 @@ const router = createBrowserRouter([
             path: "/explore",
             element: <Explore />,
           },
-          {
-            path: "/customize",
-            element: <Customize />,
-          },
         ],
       },
-
       {
-        path: "/login",
-        element: <main/>
+        path: "/customize",
+        element: <Customize />,
       },
       {
-        path: "signup",
-        // element:
+        path: "/about-us",
+        element: <AboutUs />,
       },
+      {
+        path: "/contact-us",
+        element: <Contact />,
+      },
+      {
+        path:"/cart",
+        element: <Cart/>
+      }
     ],
   },
 ]);
@@ -44,8 +51,8 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Auth0Provider
-      domain="dev-38ju8yp4j4uzytkd.us.auth0.com"
-      clientId="iaMJMyKipYwfbOiRUZtjWOuPhp8RUJxJ"
+      domain={conf.auth0ProviderDomain}
+      clientId={conf.auth0ProviderClientId}
       authorizationParams={{
         redirect_uri: window.location.origin,
       }}
@@ -54,6 +61,6 @@ createRoot(document.getElementById("root")).render(
       <RouterProvider router={router} />
       {/* </Provider> */}
     </Auth0Provider>
-    
   </StrictMode>
 );
+

@@ -31,7 +31,8 @@ function App() {
 
           {/* <Outlet/> */}
           <main className="pt-20">
-            <Home />
+            {/* <Home /> */}
+            <Outlet/>
           </main>
 
           <Footer />

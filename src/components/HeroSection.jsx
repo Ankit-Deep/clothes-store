@@ -46,13 +46,15 @@ function HeroSection() {
             />
 
             <div className="absolute bottom-4 left-4 w-full ">
-              <button
-                type="submit"
-                name="Customize"
-                className="bg-orange-500 hover:bg-orange-600 sm:text-base  px-5 sm:py-2 py-1 text-white rounded-full"
-              >
-                Customize
-              </button>
+              <Link to={`/customize`}>
+                <button
+                  type="submit"
+                  name="Customize"
+                  className="bg-orange-500 hover:bg-orange-600 sm:text-base  px-5 sm:py-2 py-1 text-white rounded-full"
+                >
+                  Customize
+                </button>
+              </Link>
             </div>
           </div>
         </div>
