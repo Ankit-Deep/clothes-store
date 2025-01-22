@@ -2,7 +2,7 @@ import React from "react";
 
 function Container({ children }) {
   return (
-    <section className="w-screen max-w-7xl mx-auto px-4">{children}</section>
+    <section className=" border-2 border-black w-screen md:w-[90%] mx-auto px-4">{children}</section>
   );
 }
 
