@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import { Header, Footer, HeroSection } from "./components";
 import { ThemeProvider } from "./components/context/theme";
@@ -28,24 +27,16 @@ function App() {
     <>
       <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
         <div className=" bg-white dark:bg-black min-h-screen items-center">
-            <Header />
+          <Header />
 
-            {/* <Outlet/> */}
-            <main className="pt-20">
-              <Home/>  
+          {/* <Outlet/> */}
+          <main className="pt-20">
+            <Home />
+          </main>
 
-            </main> 
-
-            <Footer />
+          <Footer />
         </div>
       </ThemeProvider>
-=======
-import CustomPage from "./components/container/Custompage";
-function App() {
-  return (
-    <>
-   <CustomPage/>
->>>>>>> origin/NewBranch
     </>
   );
 }

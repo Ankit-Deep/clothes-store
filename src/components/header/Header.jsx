@@ -7,7 +7,7 @@ function Header() {
   //   const authStatus = useSelector((state) => state.auth.status);
   const authStatus = true;
 
-  //   const navigate = useNavigate();
+    // const navigate = useNavigate();
 
   const navItems = [
     {
@@ -19,11 +19,6 @@ function Header() {
     {
       name: "Login",
       slug: "/login",
-      active: true,
-    },
-    {
-      name: "Signup",
-      slug: "/signup",
       active: true,
     },
     {
@@ -62,7 +57,7 @@ function Header() {
               item.active ? (
                 <li key={item.name} className="text-white visible text-lg">
                   <button
-                    //   onClick={() => navigate(item.slug)}
+                      // onClick={() => navigate(item.slug)}
 
                     className={`text-lg px-6 py-2 rounded-full text-white mx-1 hover:underline decoration-slate-400 duration-1000`}
                   >

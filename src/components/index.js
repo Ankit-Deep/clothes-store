@@ -9,6 +9,7 @@ import Explore from "./Explore";
 import Category from "./Category";
 import Product from "./Product";
 import ProductDetail from "./ProductDetail";
+import Login from "./Login";
 
 // Exporting them all
 export {
@@ -22,4 +23,5 @@ export {
   Category,
   Product,
   ProductDetail,
+  Login
 };
