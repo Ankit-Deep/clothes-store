@@ -1,8 +1,9 @@
-import CustomPage from "./components/container/Custompage";
+import ShoppingCart from "./ShoppingCart"
+
 function App() {
   return (
     <>
-   <CustomPage/>
+   <ShoppingCart/>
     </>
   )
 }
