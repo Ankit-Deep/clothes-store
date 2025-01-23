@@ -2,10 +2,14 @@
 
 import React from "react";
 import { NavLink, useParams } from "react-router";
-import { AddAdmin, Container } from "../components";
+import { AddAdmin, AddProduct, Container, UpdateProduct } from "../components";
 
 function Admin() {
-    let {params} = useParams();
+    // let {params} = useParams();
+    // params.slug;
+
+    // console.log("Params : ", params.slug);
+    
     // params.slug;
     
   return (
@@ -34,6 +38,9 @@ function Admin() {
           {/* Right section */}
           <section className="w-full ">
             <div>
+             <AddProduct/>
+             <UpdateProduct/> 
+
                 
             </div>
           </section>

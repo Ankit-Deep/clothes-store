@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Update() {
+function UpdateProduct() {
     return (
         <>
         <div>
@@ -10,4 +10,4 @@ function Update() {
     )
 }
 
-export default Update
+export default UpdateProduct;
