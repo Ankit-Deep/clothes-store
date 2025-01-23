@@ -50,7 +50,6 @@ function Customize() {
       document.getElementById("female").style.backgroundColor="Pink";
       document.getElementById("male").style.backgroundColor="white";
     }
-
   };
 
   const [selectGender, setSelectGender] = useState("bg-blue-500");
