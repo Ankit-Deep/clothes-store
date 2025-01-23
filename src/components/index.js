@@ -11,6 +11,10 @@ import Product from "./Product";
 import ProductDetail from "./ProductDetail";
 import Login from "./Login";
 import Loginbutton from "./Loginbutton"
+import AddProduct from "./Admin/AddProduct";
+import DeleteProduct from "./Admin/DeleteProduct";
+import UpdateProduct from "./Admin/UpdateProduct";
+import AddAdmin from "./Admin/AddAdmin";
 
 // Exporting them all
 export {
@@ -26,4 +30,8 @@ export {
   ProductDetail,
   Login,
   Loginbutton,
+  AddProduct,
+  DeleteProduct,
+  UpdateProduct,
+  AddAdmin,
 };

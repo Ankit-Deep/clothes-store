@@ -13,13 +13,9 @@ function Header() {
 
   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
-  useEffect(() => {
-    {isAuthenticated && alert("You are Logged in !!!")}
-
-  },[loginWithRedirect])
-
   const [showNav, setShowNav] = useState("hidden");
 
+  console.log("user : ", user);
 
   // const navItems = [
   //   {
@@ -40,7 +36,7 @@ function Header() {
   //   },
   //   {
   //     name: "Customize",
-  //     slug: "/customize", 
+  //     slug: "/customize",
   //     active: true,
   //   },
   //   // {
@@ -85,17 +81,31 @@ function Header() {
               <NavLink to="/customize">Customize</NavLink>
             </li>
 
+            {isAuthenticated
+              ? user.email === "ankit.deep257184@gmail.com" && (
+                  <li>
+                    <NavLink to="/admin">Admin</NavLink>
+                  </li>
+                )
+              : null}
+
             {isAuthenticated ? (
               <li>
                 <button
                   onClick={() => logout({ returnTo: window.location.origin })}
+                  className="bg-blue-500 px-4 py-[6px] hover:bg-blue-600 rounded-lg"
                 >
                   Log out
                 </button>
               </li>
             ) : (
               <li>
-                <button onClick={() => loginWithRedirect()}>Log In</button>
+                <button
+                  onClick={() => loginWithRedirect()}
+                  className="bg-blue-500 px-4 py-[6px] hover:bg-blue-600 rounded-lg"
+                >
+                  Log In
+                </button>
               </li>
             )}
           </ul>
@@ -185,7 +195,13 @@ function Header() {
                 <NavLink to="/contact-us">Contact Us</NavLink>
               </li>
 
-
+              {isAuthenticated
+                ? user.email === "ankit.deep257184@gmail.com" && (
+                    <li>
+                      <NavLink to="/admin">Admin</NavLink>
+                    </li>
+                  )
+                : null}
 
               {isAuthenticated ? (
                 <li>

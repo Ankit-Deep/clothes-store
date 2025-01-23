@@ -10,8 +10,15 @@ import Home from "./pages/Home.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
 import Contact from "./pages/Contact.jsx";
 import conf from "../src/conf/conf.js";
-import Customize from "./pages/Customize.jsx"
-import Cart from "./pages/Cart.jsx"
+import Customize from "./pages/Customize.jsx";
+import Cart from "./pages/Cart.jsx";
+import Admin from "./pages/Admin.jsx";
+import {
+  AddAdmin,
+  AddProduct,
+  DeleteProduct,
+  UpdateProduct,
+} from "./components/index.js";
 
 const router = createBrowserRouter([
   {
@@ -29,8 +36,34 @@ const router = createBrowserRouter([
         ],
       },
       {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
         path: "/customize",
         element: <Customize />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
+        children: [
+          {
+            path: "/admin/add-product",
+            element: <AddProduct />,
+          },
+          {
+            path: "/admin/update-product",
+            element: <UpdateProduct />,
+          },
+          {
+            path: "/admin/delete-product",
+            element: <DeleteProduct />,
+          },
+          {
+            path: "/admin/add-more-admins",
+            element: <AddAdmin />,
+          },
+        ],
       },
       {
         path: "/about-us",
@@ -40,10 +73,6 @@ const router = createBrowserRouter([
         path: "/contact-us",
         element: <Contact />,
       },
-      {
-        path:"/cart",
-        element: <Cart/>
-      }
     ],
   },
 ]);
@@ -63,4 +92,3 @@ createRoot(document.getElementById("root")).render(
     </Auth0Provider>
   </StrictMode>
 );
-
