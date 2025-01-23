@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function UpdateProduct() {
-    return (
-        <>
-        <div>
-            Update Product
-        </div>
-        </>
-    )
+
+  return (
+    <>
+      <div className="w-full h-full bg-green-300">Update Product</div>
+    </>
+  );
 }
 
 export default UpdateProduct;

@@ -44,23 +44,23 @@ const router = createBrowserRouter([
         element: <Customize />,
       },
       {
-        path: "/admin",
+        path: "/admin/*",
         element: <Admin />,
         children: [
           {
-            path: "/admin/add-product",
+            path: "/admin/*add-product",
             element: <AddProduct />,
           },
           {
-            path: "/admin/update-product",
+            path: "/admin/*update-product",
             element: <UpdateProduct />,
           },
           {
-            path: "/admin/delete-product",
+            path: "/admin/*delete-product",
             element: <DeleteProduct />,
           },
           {
-            path: "/admin/add-more-admins",
+            path: "/admin/*add-more-admins",
             element: <AddAdmin />,
           },
         ],

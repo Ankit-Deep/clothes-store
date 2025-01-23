@@ -6,7 +6,9 @@ function Cart() {
     <>
       <div className="w-full h-screen">
         <Container>
-          <div></div>
+          <div>
+            
+          </div>
         </Container>
       </div>
     </>

@@ -1,17 +1,23 @@
 // This file is only shown to the owner of the website so that he can post, update , delete products on his own
 
 import React from "react";
-import { NavLink, useParams } from "react-router";
-import { AddAdmin, AddProduct, Container, UpdateProduct } from "../components";
+import { NavLink, useParams, Routes, Route } from "react-router-dom";
+import {
+  AddAdmin,
+  AddProduct,
+  Container,
+  UpdateProduct,
+  DeleteProduct,
+} from "../components";
 
 function Admin() {
-    // let {params} = useParams();
-    // params.slug;
+  // let {params} = useParams();
+  // params.slug;
 
-    // console.log("Params : ", params.slug);
-    
-    // params.slug;
-    
+  // console.log("Params : ", params.slug);
+
+  // params.slug;
+
   return (
     <>
       <div className="w-screen h-screen">
@@ -23,26 +29,34 @@ function Admin() {
                 <NavLink to="/admin/add-product">Add</NavLink>
               </li>
               <li>
-                <NavLink to="/update-product">Update</NavLink>
+                <NavLink to="/admin/update-product">Update</NavLink>
               </li>
               <li>
-                <NavLink to="/delete-product">Delete</NavLink>
+                <NavLink to="/admin/delete-product">Delete</NavLink>
               </li>
 
               <li>
-                <NavLink to="/add-more-admins">Add more Admins</NavLink>
+                <NavLink to="/admin/add-more-admins">Add more Admins</NavLink>
               </li>
             </ul>
           </aside>
 
           {/* Right section */}
-          <section className="w-full ">
-            <div>
-             <AddProduct/>
-             <UpdateProduct/> 
-
-                
-            </div>
+          <section className="w-full p-4">
+            <Routes>
+              {/* <Route path="/admin/"> */}
+                <Route path="add-product" element={<AddProduct />} />
+                <Route
+                  path="update-product"
+                  element={<UpdateProduct />}
+                />
+                <Route
+                  path="delete-product"
+                  element={<DeleteProduct />}
+                />
+                <Route path="add-more-admins" element={<AddAdmin />} />
+              {/* </Route> */}
+            </Routes>
           </section>
         </div>
       </div>

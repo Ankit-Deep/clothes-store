@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
 function AddProduct() {
-    return (
-        <>
-            <div>
-                Add new Product
-            </div>
-        </>
-    )
+
+  return (
+    <>
+      <div className="w-full h-full bg-purple-300">
+        
+
+      </div>
+    </>
+  );
 }
 
-export default AddProduct
+export default AddProduct;

@@ -1,9 +1,11 @@
 import React from "react";
 
 function AddAdmin() {
+  console.log("Add admin");
+  
   return (
     <>
-      <div>Add more Admin</div>
+      <div className="w-full h-full bg-yellow-300">Add more Admin</div>
     </>
   );
 }
