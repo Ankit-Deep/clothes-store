@@ -13,6 +13,7 @@ import conf from "../src/conf/conf.js";
 import Customize from "./pages/Customize.jsx";
 import Cart from "./pages/Cart.jsx";
 import Admin from "./pages/Admin.jsx";
+import ShoppingCart from "./pages/ShoppingCart.jsx";
 import {
   AddAdmin,
   AddProduct,
@@ -51,7 +52,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart",
-        element: <Cart />,
+        element: <ShoppingCart />,
       },
       {
         path: "/customize",
@@ -89,8 +90,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/product/:productId",
-        element: <ProductDetail/>
-      }
+        element: <ProductDetail />,
+      },
     ],
   },
 ]);

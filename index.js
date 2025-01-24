@@ -1,14 +1,15 @@
 import express from 'express';
 import cors from 'cors';
 import Razorpay from 'razorpay';
+import conf from './src/conf/conf.js';
 
 const app = express();
 
 app.use(cors());
 
 const razorpay = new Razorpay({
-  key_id: 'rzp_test_bx3CNDuq3MIRI3',
-  key_secret: 'fux7ROqzVxSDqGFkcpAn6rQ8'
+  key_id: conf.razorPayKey,
+  key_secret: conf.razorPaySecret
 });
 
 app.get('/create-order', async (req, res) => {

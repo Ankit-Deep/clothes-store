@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaMinus, FaPlus, FaTimes } from "react-icons/fa";
-
+import conf from "../conf/conf";
 const ShoppingCart = () => {
   const [amount, setAmount] = useState("");
   const [shipping, setShipping] = useState("Standard-Delivery- 40.00");
@@ -8,10 +8,9 @@ const ShoppingCart = () => {
 
   const loadRazorpayScript = () => {
     const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.src = conf.razorPayScript;
     script.async = true;
     document.body.appendChild(script);
-    
   };
 
   useEffect(() => {
@@ -30,7 +29,7 @@ const ShoppingCart = () => {
       const options = {
         amount: data.amount,
         order_id: data.id,
-        key: "rzp_test_bx3CNDuq3MIRI3",
+        key: conf.razorPayKey,
         currency: "INR",
         name: "My Store",
         description: "Test Transaction",

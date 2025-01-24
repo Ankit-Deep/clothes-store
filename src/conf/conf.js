@@ -12,6 +12,10 @@ const conf = {
   appwriteCollectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
 
   appwriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
+
+  razorPayKey: String(process.env.VITE_RAZORPAY_KEY),
+  razorPaySecret: String(process.env.VITE_RAZORPAY_SECRET),
+  razorPayScript: String(process.env.VITE_RAZORPAY_SCRIPT),
 };
 
 export default conf;
