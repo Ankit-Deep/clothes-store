@@ -61,7 +61,11 @@ const CustomPage = () => {
             </ul>
           </div>
           <div className="w-full">
+<<<<<<< HEAD
+            <h1 className="w-full text-[29px] uppercase   text-black  dark:text-white justify-center text-center">
+=======
             <h1 className="w-full text-[29px] uppercase   text-black dark:text-white justify-center text-center">
+>>>>>>> main
               Build Your Perfect Fit
             </h1>
             <form className="w-full" onSubmit={handleSubmit}>
