@@ -15,7 +15,7 @@ function Admin() {
   return (
     <>
       <div className="w-full h-screen ">
-        <div className="w-[95%] mx-auto my-6 rounded-xl h-4/5 bg-slate-300 flex ">
+        <div className="w-[95%] mx-auto my-6 rounded-xl sm:h-4/5 bg-slate-300 flex ">
           {/* left / aside section for nav options */}
           <aside className="border-r w-2/12">
             <ul className="my-5 mx-4 flex flex-col gap-5 text-lg">

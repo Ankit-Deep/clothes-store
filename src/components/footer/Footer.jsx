@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../container/container";
+import Container from "../container/Container";
 import { Link } from "react-router";
 
 function Footer() {

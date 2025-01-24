@@ -36,13 +36,6 @@ function Customize() {
   const setGender = (gender) => {
     setFormData((prevData) => ({ ...prevData, gender }));
 
-    // console.log("e : ", e);
-    // getButtonStyle = (gender) => {
-    //   return gender === gender
-    //     ? { color: "white", backgroundColor: "gray", borderColor: "gray" }
-    //     : { color: "gray", borderColor: "gray" };
-    // }; 
-
     if (gender === "male") {
       document.getElementById("male").style.backgroundColor="blue";
       document.getElementById("female").style.backgroundColor="white";

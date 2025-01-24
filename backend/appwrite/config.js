@@ -1,4 +1,6 @@
+
 // File for CRUD operations on Product
+
 import { Client, Databases, ID, Query } from "appwrite";
 import conf from "../../src/conf/conf";
 
@@ -80,12 +82,12 @@ export class Service {
   }
 
   //Function to get an individual Product
-  async getProduct(documentId) {
+  async getProduct(productId) {
     try {
       return await this.databases.getDocument(
         conf.appwrtieDatabaseId,
         conf.appwriteCollectionId,
-        documentId
+        productId
       );
     } catch (error) {
       throw error;
