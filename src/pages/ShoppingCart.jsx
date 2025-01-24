@@ -1,22 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { FaMinus, FaPlus, FaTimes } from "react-icons/fa";
+import conf from "../conf/conf";
+// import dotenv from "dotenv";
+// dotenv.config();
 
 const ShoppingCart = () => {
   const [amount, setAmount] = useState("");
   const [shipping, setShipping] = useState("Standard-Delivery- 40.00");
   const [paymode, setPaymode] = useState("Pay");
 
-  const loadRazorpayScript = () => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/checkout.js";
-    script.async = true;
-    document.body.appendChild(script);
-    
-  };
+  // const loadRazorpayScript = () => {
+  //   const script = document.createElement("script");
+  //   script.src = process.env.VITE_RAZORPAY_SCRIPT;
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  // };
 
-  useEffect(() => {
-    loadRazorpayScript();
-  }, []);
+  // useEffect(() => {
+  //   loadRazorpayScript();
+  // }, []);
 
   const payNow = async () => {
     try {
@@ -30,7 +32,7 @@ const ShoppingCart = () => {
       const options = {
         amount: data.amount,
         order_id: data.id,
-        key: "rzp_test_bx3CNDuq3MIRI3",
+        key: conf.razorPayKey,
         currency: "INR",
         name: "My Store",
         description: "Test Transaction",
@@ -42,7 +44,7 @@ const ShoppingCart = () => {
           console.log(data);
         },
         prefill: {
-          name: "Gaurav Kumar",
+          name: "Gaurav Kumar", 
           email: "gaurav@new.com",
           contact: "9999999999",
         },

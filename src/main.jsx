@@ -13,10 +13,13 @@ import conf from "../src/conf/conf.js";
 import Customize from "./pages/Customize.jsx";
 import Cart from "./pages/Cart.jsx";
 import Admin from "./pages/Admin.jsx";
+import ShoppingCart from "./pages/ShoppingCart.jsx";
 import {
   AddAdmin,
   AddProduct,
   DeleteProduct,
+  ExpandCategory,
+  ProductDetail,
   UpdateProduct,
 } from "./components/index.js";
 
@@ -30,14 +33,26 @@ const router = createBrowserRouter([
         element: <Home />,
         children: [
           {
-            path: "/explore",
+            path: "/explore/*",
             element: <Explore />,
           },
         ],
       },
       {
+        path: "/full-category/Mens",
+        element: <ExpandCategory category={"Mens"} />,
+      },
+      {
+        path: "/full-category/Womens",
+        element: <ExpandCategory category={"Womens"} />,
+      },
+      {
+        path: "/full-category/Kids",
+        element: <ExpandCategory category={"Kids"} />,
+      },
+      {
         path: "/cart",
-        element: <Cart />,
+        element: <ShoppingCart />,
       },
       {
         path: "/customize",
@@ -72,6 +87,10 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <Contact />,
+      },
+      {
+        path: "/product/:productId",
+        element: <ProductDetail />,
       },
     ],
   },
