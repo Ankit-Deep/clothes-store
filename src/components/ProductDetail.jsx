@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Container from "./container/Container";
+import { Container } from "../components/index";
 import { useParams } from "react-router";
 import service from "../../backend/appwrite/config";
 import fileService from "../../backend/appwrite/file";

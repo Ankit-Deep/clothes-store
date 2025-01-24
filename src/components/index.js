@@ -1,8 +1,8 @@
 // Importing all the components here
-import Container from "./container/Container";
+import Container from "./Container/Container";
 import ThemeBtn from "./ThemeBtn";
-import Header from "./header/Header";
-import Footer from "./footer/Footer";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 import HeroSection from "./HeroSection";
 import Button from "./Button";
 import Explore from "./Explore";

@@ -1,6 +1,6 @@
 // Expand each category when clicked on see all
 import React, { useState, useEffect } from "react";
-import Container from "./container/Container";
+import { Container } from "../components/index";
 import service from "../../backend/appwrite/config";
 import { Query } from "appwrite";
 import Product from "./Product";
@@ -28,10 +28,12 @@ function ExpandCategory({ category }) {
             {/* All Products of this category */}
             <section className="w-full h-full border bg-red-200 my-5 flex flex-wrap">
               {allProucts.map((product) => {
-                <div className="sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2" 
-                key={product.$id}>
+                <div
+                  className="sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2"
+                  key={product.$id}
+                >
                   <Product {...productData} />
-                </div>; 
+                </div>;
               })}
             </section>
           </div>
