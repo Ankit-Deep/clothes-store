@@ -1,9 +1,8 @@
 // Expand each category when clicked on see all
 import React, { useState, useEffect } from "react";
-import { Container } from "../components/index";
+import { Container, Product } from "../components/index";
 import service from "../../backend/appwrite/config";
 import { Query } from "appwrite";
-import Product from "./Product";
 
 function ExpandCategory({ category }) {
   const [allProucts, setAllProducts] = useState([]);

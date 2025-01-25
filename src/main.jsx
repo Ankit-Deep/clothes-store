@@ -5,14 +5,14 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 // import { Provider } from 'react-redux'
-import Explore from "./components/Explore.jsx";
+
+import { Explore } from "./components/index.js";
 import Home from "./Pages/Home.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import Contact from "./Pages/Contact.jsx";
 import conf from "./Conf/conf.js";
 import Admin from "./Pages/Admin.jsx";
 import Customize from "./pages/Customize.jsx";
-// import CustomPage from "./Pages/Custompage.jsx";
 import ShoppingCart from "./Pages/ShoppingCart.jsx";
 import {
   AddAdmin,
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/customize",
-        element: <Customize  />,
+        element: <Customize />,
       },
       {
         path: "/admin/*",

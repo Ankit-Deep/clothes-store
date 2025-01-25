@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Explore, HeroSection } from "../components";
+import { Container, HeroSection, Explore } from "../components/index";
 
 function Home() {
   return (
@@ -9,7 +9,7 @@ function Home() {
           <div className="min-w-full flex flex-col gap-5">
             <HeroSection />
 
-            <Explore/>
+            <Explore />
           </div>
         </Container>
       </div>

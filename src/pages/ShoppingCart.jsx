@@ -15,7 +15,7 @@ const ShoppingCart = () => {
   //   script.async = true;
   //   document.body.appendChild(script);
   // };
-
+  
   // useEffect(() => {
   //   loadRazorpayScript();
   // }, []);
