@@ -5,12 +5,12 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 // import { Provider } from 'react-redux'
-import Home from "../src/Pages/Home.jsx";
-import AboutUs from "../src/Pages/AboutUs.jsx";
-import Contact from "../src/Pages/Contact.jsx";
-import Admin from "../src/Pages/Admin.jsx";
-import Customize from "../src/Pages/Customize.jsx";
-import ShoppingCart from "../src/Pages/ShoppingCart.jsx";
+import Home from "./Pages/Home.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Admin from "./Pages/Admin.jsx";
+import Customize from "./Pages/Customize.jsx";
+import ShoppingCart from "./Pages/ShoppingCart.jsx";
 import conf from "./Conf/conf.js";
 import {
   AddAdmin,
