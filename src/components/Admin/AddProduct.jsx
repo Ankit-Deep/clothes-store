@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import fileService from "../../Backend/appwrite/file";
-import service from "../../../Backend/appwrite/config";
+import fileService from "../../Backend/Appwrite/file";
+import service from "../../Backend/Appwrite/config";
 import { useNavigate } from "react-router";
 
 function AddProduct() {

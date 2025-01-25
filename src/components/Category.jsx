@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Product } from "../components/index";
-import { NavLink } from "react-router";
-import service from "../../Backend/Appwrite/config";
+import { NavLink } from "react-router-dom"; // Corrected import statement
+import service from "../Backend/Appwrite/config";
 import { Query } from "appwrite";
 
 function Category({ title, ...props }) {
-  const [allProucts, setAllProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
     service
@@ -13,7 +13,7 @@ function Category({ title, ...props }) {
       .then((products) => {
         products ? setAllProducts(products.documents) : null;
       });
-  }, []);
+  }, [title]); // Added title as a dependency
 
   return (
     <>
@@ -31,30 +31,14 @@ function Category({ title, ...props }) {
 
         <div className="rounded-xl border-black bg-gray-200 dark:bg-gray-400 w-full ">
           <ul className="w-full flex sm:flex-row flex-wrap p-2">
-            {/* <li className="sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2 ">
-              <Product />
-            </li>
-
-            <li className=" sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2">
-              <Product />
-            </li>
-
-            <li className="sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2 ">
-              <Product />
-            </li>
-
-            <li className="sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2">
-              <Product />
-            </li> */}
-
-            {allProucts.slice(0, 4).map((product) => {
+            {allProducts.slice(0, 4).map((product) => (
               <li
                 className="sm:w-1/4 w-2/4 h-2/4 border-black rounded-xl p-2"
                 key={product.$id}
               >
-                <Product {...productData} />
-              </li>;
-            })}
+                <Product {...product} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>

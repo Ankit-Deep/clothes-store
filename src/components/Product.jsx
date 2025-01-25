@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import fileService from "../../Backend/Appwrite/file";
+import fileService from "../Backend/Appwrite/file";
 
 function Product({
   $id,

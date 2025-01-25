@@ -1,7 +1,7 @@
 // File for CRUD operations on Product
 
 import { Client, Databases, ID, Query } from "appwrite";
-import conf from "../../src/Conf/conf";
+import conf from "../../conf/conf";
 
 export class Service {
   client = new Client();
