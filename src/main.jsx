@@ -5,7 +5,6 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 // import { Provider } from 'react-redux'
-
 import { Explore } from "./components/index.js";
 import Home from "./Pages/Home.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
