@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaMinus, FaPlus, FaTimes } from "react-icons/fa";
-import conf from "../Conf/conf";
+import conf from "../conf/Conf";
 // import dotenv from "dotenv";
 // dotenv.config();
 

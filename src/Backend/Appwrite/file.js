@@ -1,6 +1,6 @@
 // File for CRUD operations on Product Images
 import { Client, Storage, ID } from "appwrite";
-import conf from "../../conf/conf";
+import conf from "../../conf/Conf";
 
 export class FileServices {
   client = new Client();
