@@ -11,7 +11,7 @@ import AboutUs from "./Pages/AboutUs.jsx";
 import Contact from "./Pages/Contact.jsx";
 import conf from "./Conf/conf.js";
 import Admin from "./Pages/Admin.jsx";
-import Customize from "./pages/Customize.jsx";
+import Customize from "./Pages/Customize.jsx";
 import ShoppingCart from "./Pages/ShoppingCart.jsx";
 import {
   AddAdmin,
