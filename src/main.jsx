@@ -6,7 +6,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 // import { Provider } from 'react-redux'
 import Explore from "./components/Explore.jsx";
-import Home from "./Pages/Home.jsx";
+import Home from './Pages/Home.jsx';
 import AboutUs from "./Pages/AboutUs.jsx";
 import Contact from "./Pages/Contact.jsx";
 import conf from "./Conf/conf.js";
