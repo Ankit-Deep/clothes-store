@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import useTheme from "./Context/theme";
 
 function ThemeBtn() {
-  const [themeImage, setThemeImage] = useState(
-    "/assets/lightTheme.png"
-  );
+  const [themeImage, setThemeImage] = useState("/assets/lightTheme.png");
 
   const { themeMode, darkTheme, lightTheme } = useTheme();
 
@@ -29,7 +27,7 @@ function ThemeBtn() {
           src={themeImage}
           alt="theme"
           className=" rounded-3xl w-8 h-8 cursor-pointer"
-          onClick={changeTheme} 
+          onClick={changeTheme}
         />
       </div>
     </>

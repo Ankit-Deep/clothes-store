@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "../components/index";
 import { useParams } from "react-router";
-import service from "../../backend/appwrite/config";
-import fileService from "../../backend/appwrite/file";
+import service from "../../Backend/Appwrite/config";
+import fileService from "../../Backend/Appwrite/file";
 import { useNavigate } from "react-router";
 import { Link } from "react-router";
 
