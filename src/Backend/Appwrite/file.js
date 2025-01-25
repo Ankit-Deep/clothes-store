@@ -1,6 +1,6 @@
 // File for CRUD operations on Product Images
 import { Client, Storage, ID } from "appwrite";
-import conf from "../../src/conf/conf";
+import conf from "../../src/Conf/conf";
 
 export class FileServices {
   client = new Client();
@@ -37,10 +37,9 @@ export class FileServices {
     }
   }
 
-
   // Function to Preview image
   getImagePreview(fileId) {
-    return this.storage.getFilePreview(conf.appwriteBucketId, fileId)
+    return this.storage.getFilePreview(conf.appwriteBucketId, fileId);
   }
 }
 

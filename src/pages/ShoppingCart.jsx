@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaMinus, FaPlus, FaTimes } from "react-icons/fa";
-import conf from "../conf/conf";
+import conf from "../Conf/conf";
 // import dotenv from "dotenv";
 // dotenv.config();
 
@@ -15,7 +15,7 @@ const ShoppingCart = () => {
   //   script.async = true;
   //   document.body.appendChild(script);
   // };
-
+  
   // useEffect(() => {
   //   loadRazorpayScript();
   // }, []);
@@ -44,7 +44,7 @@ const ShoppingCart = () => {
           console.log(data);
         },
         prefill: {
-          name: "Gaurav Kumar", 
+          name: "Gaurav Kumar",
           email: "gaurav@new.com",
           contact: "9999999999",
         },

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Container } from "../components";
+import { Container } from "../components/index";
 
 function Customize() {
   const [formData, setFormData] = useState({
@@ -27,8 +27,6 @@ function Customize() {
     pocket: "No",
   });
 
-  
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -39,11 +37,11 @@ function Customize() {
     setFormData((prevData) => ({ ...prevData, gender }));
 
     if (gender === "male") {
-      document.getElementById("male").style.backgroundColor="blue";
-      document.getElementById("female").style.backgroundColor="white";
+      document.getElementById("male").style.backgroundColor = "blue";
+      document.getElementById("female").style.backgroundColor = "white";
     } else {
-      document.getElementById("female").style.backgroundColor="Pink";
-      document.getElementById("male").style.backgroundColor="white";
+      document.getElementById("female").style.backgroundColor = "Pink";
+      document.getElementById("male").style.backgroundColor = "white";
     }
   };
 

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Header, Footer, HeroSection } from "./components";
-import { ThemeProvider } from "./components/context/theme";
+import { Header, Footer } from "./components/index";
+// import { ThemeProvider } from "./components/context/theme";
+import { ThemeProvider } from "./components/Context/theme";
 import { Outlet } from "react-router";
-import Home from "./pages/Home";
+// import Home from "./Pages/Home";
 // import "./App.css";
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
           {/* <Outlet/> */}
           <main className="pt-20">
             {/* <Home /> */}
-            <Outlet/>
+            <Outlet />
           </main>
 
           <Footer />

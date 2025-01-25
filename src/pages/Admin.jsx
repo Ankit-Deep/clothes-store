@@ -5,10 +5,10 @@ import { NavLink, useParams, Routes, Route } from "react-router-dom";
 import {
   AddAdmin,
   AddProduct,
-  Container,
+  // Container,
   UpdateProduct,
   DeleteProduct,
-} from "../components";
+} from "../components/index";
 
 function Admin() {
 

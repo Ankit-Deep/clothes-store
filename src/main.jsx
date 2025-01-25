@@ -5,15 +5,13 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 // import { Provider } from 'react-redux'
-import Explore from "./components/Explore.jsx";
-import Home from "./pages/Home.jsx";
-import AboutUs from "./pages/AboutUs.jsx";
-import Contact from "./pages/Contact.jsx";
-import conf from "../src/conf/conf.js";
-import Customize from "./pages/Customize.jsx";
-import Cart from "./pages/Cart.jsx";
-import Admin from "./pages/Admin.jsx";
-import ShoppingCart from "./pages/ShoppingCart.jsx";
+import Home from "./Pages/Home.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Admin from "./Pages/Admin.jsx";
+import Customize from "./Pages/Customize.jsx";
+import ShoppingCart from "./Pages/ShoppingCart.jsx";
+import conf from "./Conf/conf.js";
 import {
   AddAdmin,
   AddProduct,
@@ -21,6 +19,7 @@ import {
   ExpandCategory,
   ProductDetail,
   UpdateProduct,
+  Explore,
 } from "./components/index.js";
 
 const router = createBrowserRouter([

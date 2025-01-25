@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../container/Container";
 import { Link } from "react-router";
+import { Container } from "../index";
 
 function Footer() {
   return (
