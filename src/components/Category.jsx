@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Product } from "../components/index";
+import { Product } from "../Components/index";
 import { NavLink } from "react-router";
 import service from "../Backend/appwrite/config";
 import { Query } from "appwrite";

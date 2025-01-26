@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { Header, Footer } from "./components/index";
-// import { ThemeProvider } from "./components/context/theme";
-import { ThemeProvider } from "./components/Context/theme";
+import { Header, Footer } from "./Components/index";
+import { ThemeProvider } from "./Components/Context/theme";
 import { Outlet } from "react-router";
 // import Home from "./Pages/Home";
 // import "./App.css";

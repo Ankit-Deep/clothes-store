@@ -20,7 +20,7 @@ import {
   ProductDetail,
   UpdateProduct,
   Explore,
-} from "./components/index.js";
+} from "./Components/index.js";
 
 const router = createBrowserRouter([
   {

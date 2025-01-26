@@ -8,7 +8,7 @@ import {
   // Container,
   UpdateProduct,
   DeleteProduct,
-} from "../components/index";
+} from "../Components/index";
 
 function Admin() {
 

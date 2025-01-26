@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import fileService from '../../Backend/appwrite/file';
+import fileService from "../../Backend/appwrite/file";
 import service from "../../Backend/appwrite/config";
 import { useNavigate } from "react-router";
 

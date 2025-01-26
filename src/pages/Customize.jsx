@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Container } from "../components/index";
+import { Container } from "../Components/index";
 
 function Customize() {
   const [formData, setFormData] = useState({

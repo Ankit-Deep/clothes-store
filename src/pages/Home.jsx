@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, HeroSection, Explore } from "../components/index";
+import { Container, HeroSection, Explore } from "../Components/index";
 
 function Home() {
   return (
