@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Product } from "../components/index";
 import { NavLink } from "react-router";
-import service from "../../Backend/Appwrite/config";
+import service from "../Backend/appwrite/config";
 import { Query } from "appwrite";
 
 function Category({ title, ...props }) {
